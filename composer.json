@@ -1,0 +1,34 @@
+{
+	"repositories": [{
+		"type": "composer",
+		"url": "https://composer.typo3.org/"
+	}],
+	"name": "igodorogea/moldova-trade-website",
+	"description": "Modova Trade website",
+	"license": "GPL-2.0+",
+	"require": {
+		"typo3/cms": "8.5.1 as 7.6.99",
+		"bk2k/bootstrap-package": "^7.1",
+		"helhum/typo3-console": "^4.1",
+		"dmitryd/typo3-realurl": "^2.1",
+		"aoepeople/crawler": "dev-master",
+		"typo3-ter/news": "^5.3",
+		"typo3-ter/go-maps-ext": "^2.2",
+		"typo3-ter/gravatar": "^0.0.7",
+		"typo3-ter/rx-unrollsavebuttons": "^1.1"
+	},
+    "autoload": {
+        "psr-4": {
+            "Igodorogea\\MdtradePackage\\": "web/typo3conf/ext/mdtrade_package/Classes"
+        }
+    },
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": "web"
+		},
+		"helhum/typo3-console": {
+			"install-extension-dummy": false
+		}
+	}
+}

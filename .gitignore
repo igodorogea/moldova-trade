@@ -1,0 +1,28 @@
+#############################
+# TYPO3 CMS Base Distribution
+#############################
+.DS_Store
+.idea
+
+/vendor
+
+# Ignore serveral upload and file directories.
+/web/fileadmin/user_upload/
+/web/fileadmin/_temp_/
+/web/fileadmin/_processed_/
+/web/uploads/
+
+/web/index.php
+/web/typo3
+/web/typo3temp
+
+# Ignore cache
+/web/typo3conf/temp_CACHED*
+/web/typo3conf/temp_fieldInfo.php
+/web/typo3conf/deprecation_*.log
+
+/web/typo3conf/l10n
+/web/typo3conf/ext/*
+!/web/typo3conf/ext/mdtrade_package
+
+ENABLE_INSTALL_TOOL
